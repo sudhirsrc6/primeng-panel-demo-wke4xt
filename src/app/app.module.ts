@@ -10,18 +10,31 @@ import { ToastModule } from 'primeng/toast';
 import { ButtonModule } from 'primeng/button';
 import { MenuModule } from 'primeng/menu';
 import { DynamicElementComponent } from './dynamic-element/dynamic-element.component';
+import { InputElementComponent } from './element-components/input-element/input-element.component';
+import { DropdownElementComponent } from './element-components/dropdown-element/dropdown-element.component';
+import { FormsModule } from '@angular/forms';
+import { AutoCompleteModule } from 'primeng/autocomplete';
+import { InputTextModule } from 'primeng/inputtext';
 
 @NgModule({
   imports: [
+    FormsModule,
     BrowserModule,
     BrowserAnimationsModule,
     PanelModule,
     ToastModule,
     ButtonModule,
     MenuModule,
+    AutoCompleteModule,
+    InputTextModule,
     RouterModule.forRoot([{ path: '', component: AppComponent }]),
   ],
-  declarations: [AppComponent, DynamicElementComponent],
+  declarations: [
+    AppComponent,
+    DynamicElementComponent,
+    InputElementComponent,
+    DropdownElementComponent,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

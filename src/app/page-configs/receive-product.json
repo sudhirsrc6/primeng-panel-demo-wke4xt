@@ -5,7 +5,37 @@
       "fieldName": "warehouseId",
       "label": "Warehouse",
       "tooltip": "Warehouse",
-      "elementType": "Dropdown"
+      "elementType": "dropdown",
+      "dataKey": "warehouseId",
+      "dropdownData": [
+        {
+          "warehouseId": "SP"
+        },
+        {
+          "warehouseId": "SP2"
+        },
+        {
+          "warehouseId": "WHS-1"
+        }
+      ]
+    },
+    "owner": {
+      "fieldName": "ownerId",
+      "label": "Owner",
+      "tooltip": "Owner",
+      "elementType": "dropdown"
+    },
+    "po": {
+      "fieldName": "po",
+      "label": "Receipt",
+      "tooltip": "Receipt",
+      "elementType": "input"
+    },
+    "releaseNum": {
+      "fieldName": "releaseNum",
+      "label": "Release Num",
+      "tooltip": "Release Num",
+      "elementType": "input"
     }
   }
 }
