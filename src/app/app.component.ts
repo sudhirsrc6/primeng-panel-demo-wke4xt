@@ -31,4 +31,6 @@ export class AppComponent {
   onSubmit() {
     console.log('formData', this.formData);
   }
+
+  permissions() {}
 }
