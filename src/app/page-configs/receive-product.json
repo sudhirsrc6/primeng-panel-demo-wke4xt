@@ -6,6 +6,28 @@
       "label": "Warehouse",
       "tooltip": "Warehouse",
       "elementType": "dropdown",
+      "dataKey": "displayName",
+      "field": "warehouseId",
+      "dropdownData": [
+        {
+          "warehouseId": "SP",
+          "displayName": "[SP]"
+        },
+        {
+          "warehouseId": "SP2",
+          "displayName": "[SP2]"
+        },
+        {
+          "warehouseId": "WHS-1",
+          "displayName": "[WHS-1]"
+        }
+      ]
+    },
+    "owner": {
+      "fieldName": "ownerId",
+      "label": "Owner",
+      "tooltip": "Owner",
+      "elementType": "dropdown",
       "dataKey": "warehouseId",
       "dropdownData": [
         {
@@ -18,12 +40,6 @@
           "warehouseId": "WHS-1"
         }
       ]
-    },
-    "owner": {
-      "fieldName": "ownerId",
-      "label": "Owner",
-      "tooltip": "Owner",
-      "elementType": "dropdown"
     },
     "po": {
       "fieldName": "po",

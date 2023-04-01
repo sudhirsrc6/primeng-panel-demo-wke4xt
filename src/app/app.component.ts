@@ -18,5 +18,17 @@ export class AppComponent {
   ngOnInit() {
     this.elemntUtil = new DynamicElementUtil('receive-product', this.formData);
     this.pageElements = this.elemntUtil.getPageElements().fields;
+
+    this.elemntUtil.onchange(this.pageElements.warehouse, (event) => {
+      this.onWarehouseSelected(event);
+    });
+  }
+
+  onWarehouseSelected(event) {
+    console.log('Warehouse value is changed', event);
+  }
+
+  onSubmit() {
+    console.log('formData', this.formData);
   }
 }

@@ -13,4 +13,8 @@ export class DynamicElementUtil {
   getPageElements(): any {
     return receiveProduct;
   }
+
+  onchange(element: any, callFunction: Function) {
+    element.onchange = callFunction;
+  }
 }

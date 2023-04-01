@@ -32,7 +32,9 @@ export class DropdownElementComponent implements OnInit {
 
   populateEnteredData(event: any) {}
 
-  onItemSelect(event: any) {}
+  onItemSelect(event: any) {
+    if (this.elementConfig.onchange) this.elementConfig.onchange(event);
+  }
 
   onKeyUp(event: any) {}
 }
