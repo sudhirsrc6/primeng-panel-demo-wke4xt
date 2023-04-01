@@ -1,0 +1,11 @@
+{
+  "pageId": "receive-product",
+  "fields": {
+    "warehouse": {
+      "fieldName": "warehouseId",
+      "label": "Warehouse",
+      "tooltip": "Warehouse",
+      "elementType": "Dropdown"
+    }
+  }
+}
