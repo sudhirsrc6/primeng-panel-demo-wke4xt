@@ -6,6 +6,7 @@
       "label": "Warehouse",
       "tooltip": "Warehouse",
       "elementType": "dropdown",
+      "editable": false,
       "field": "warehouseId",
       "dropdownData": [
         {
@@ -24,16 +25,16 @@
       "label": "Owner",
       "tooltip": "Owner",
       "elementType": "dropdown",
-      "field": "warehouseId",
+      "field": "ownerId",
       "dropdownData": [
         {
-          "warehouseId": "SP"
+          "ownerId": "SP"
         },
         {
-          "warehouseId": "SP2"
+          "ownerId": "SP2"
         },
         {
-          "warehouseId": "WHS-1"
+          "ownerId": "WHS-1"
         }
       ]
     },
@@ -41,13 +42,29 @@
       "fieldName": "po",
       "label": "Receipt",
       "tooltip": "Receipt",
-      "elementType": "input"
+      "elementType": "input",
+      "editable": false
     },
     "releaseNum": {
       "fieldName": "releaseNum",
       "label": "Release Num",
       "tooltip": "Release Num",
       "elementType": "input"
+    },
+    "receiptType": {
+      "fieldName": "receiptType",
+      "label": "Receipt Type",
+      "tooltip": "Receipt Type",
+      "elementType": "dropdown",
+      "field": "receiptType",
+      "dropdownData": [
+        {
+          "receiptType": "ASN"
+        },
+        {
+          "receiptType": "NY"
+        }
+      ]
     }
   }
 }

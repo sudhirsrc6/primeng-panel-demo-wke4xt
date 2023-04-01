@@ -5,4 +5,7 @@
   [placeholder]="elementConfig.label"
   [id]="elementConfig.fieldName"
   [(ngModel)]="elementConfig.formData[elementConfig.fieldName]"
+  [disabled]="
+    elementConfig.editable != undefined ? !elementConfig.editable : false
+  "
 />

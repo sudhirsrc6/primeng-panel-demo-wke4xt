@@ -10,6 +10,18 @@ export class DynamicElementUtil {
     });
   }
 
+  mergeSecurityConfigs(securityConfigs: any) {
+    securityConfigs.userFieldSettingList.forEach((eachField: any) => {
+      let elementConfig = this.getPageElements().fields[eachField.fieldId];
+      if (eachField.editable != undefined) {
+        elementConfig.editable = eachField.editable;
+      }
+      if (eachField.viewable != undefined) {
+        elementConfig.viewable = eachField.viewable;
+      }
+    });
+  }
+
   getPageElements(): any {
     return receiveProduct;
   }

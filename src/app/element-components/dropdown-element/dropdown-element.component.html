@@ -18,7 +18,9 @@
   styleClass="custom-dd"
   [inputStyle]="style"
   (onKeyUp)="onKeyUp($event)"
-  [disabled]="disabled"
+  [disabled]="
+    elementConfig.editable != undefined ? !elementConfig.editable : false
+  "
   appendTo="body"
 >
 </p-autoComplete>
