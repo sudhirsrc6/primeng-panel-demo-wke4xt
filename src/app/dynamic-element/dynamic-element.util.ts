@@ -19,6 +19,9 @@ export class DynamicElementUtil {
       if (eachField.viewable != undefined) {
         elementConfig.viewable = eachField.viewable;
       }
+      if (eachField.fieldLabel != undefined) {
+        elementConfig.label = eachField.fieldLabel;
+      }
     });
   }
 

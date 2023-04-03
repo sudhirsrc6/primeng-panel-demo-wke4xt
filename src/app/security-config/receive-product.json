@@ -2,9 +2,29 @@
   "screenId": "receive-product",
   "canAccess": true,
   "userFieldSettingList": [
-    { "fieldId": "warehouse", "editable": true, "viewable": false },
-    { "fieldId": "owner", "editable": true, "viewable": false },
-    { "fieldId": "po", "editable": true, "viewable": false },
-    { "fieldId": "releaseNum", "editable": true, "viewable": false }
+    {
+      "fieldId": "warehouse",
+      "editable": true,
+      "viewable": false,
+      "fieldLabel": "Warehouse"
+    },
+    {
+      "fieldId": "owner",
+      "editable": true,
+      "viewable": false,
+      "fieldLabel": "Owner"
+    },
+    {
+      "fieldId": "po",
+      "editable": true,
+      "viewable": false,
+      "fieldLabel": "PO"
+    },
+    {
+      "fieldId": "releaseNum",
+      "editable": true,
+      "viewable": false,
+      "fieldLabel": "Release Num"
+    }
   ]
 }
