@@ -18,7 +18,8 @@
         {
           "warehouseId": "WHS-1"
         }
-      ]
+      ],
+      "apiUrl": "/api-gateway/general-service/getWarehouses"
     },
     "owner": {
       "fieldName": "ownerId",
@@ -43,7 +44,14 @@
       "label": "Receipt",
       "tooltip": "Receipt",
       "elementType": "input",
-      "editable": false
+      "editable": false,
+      "required": true,
+      "requiredMsg": "Value is required.",
+      "validationRules": ["number", "email"],
+      "appendIconLeft": true,
+      "icon": "",
+      "appendTextLabel": true,
+      "appendTextPosition": "left"
     },
     "releaseNum": {
       "fieldName": "releaseNum",
@@ -65,6 +73,11 @@
           "receiptType": "NY"
         }
       ]
+    },
+    "submitButton": {
+      "elementType": "button",
+      "label": "Submit",
+      "buttonStyle": "Primary"
     }
   }
 }

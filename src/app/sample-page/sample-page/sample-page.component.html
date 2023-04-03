@@ -1,0 +1,50 @@
+<div class="row">
+  <div class="col-12" style="text-align: right">
+    <button (click)="permissions()">Customize Permissions</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <dynamic-element [elementConfig]="pageElements.warehouse"></dynamic-element>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <dynamic-element [elementConfig]="pageElements.owner"></dynamic-element>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <dynamic-element [elementConfig]="pageElements.po"></dynamic-element>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <dynamic-element
+      [elementConfig]="pageElements.releaseNum"
+    ></dynamic-element>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <dynamic-element
+      [elementConfig]="pageElements.receiptType"
+    ></dynamic-element>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <button (click)="onSubmit()">Submit</button>
+  </div>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<a class="dropdown-item" href="#" routerLink="/add">Generate Config</a>

@@ -15,6 +15,8 @@ import { DropdownElementComponent } from './element-components/dropdown-element/
 import { FormsModule } from '@angular/forms';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { InputTextModule } from 'primeng/inputtext';
+import { GenerateConfigComponent } from './generate-config/generate-config/generate-config.component';
+import { SamplePageComponent } from './sample-page/sample-page/sample-page.component';
 
 @NgModule({
   imports: [
@@ -27,9 +29,13 @@ import { InputTextModule } from 'primeng/inputtext';
     MenuModule,
     AutoCompleteModule,
     InputTextModule,
-    RouterModule.forRoot([{ path: '', component: AppComponent }]),
+    RouterModule.forRoot([
+      { path: '', component: SamplePageComponent },
+      { path: 'add', component: GenerateConfigComponent },
+    ]),
   ],
   declarations: [
+    SamplePageComponent,
     AppComponent,
     DynamicElementComponent,
     InputElementComponent,
