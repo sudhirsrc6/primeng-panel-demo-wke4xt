@@ -3,11 +3,143 @@
 <br />
 <br />
 
-<div>
-  Page Id:<input
-    type="text"
-    pInputText
-    autocomplete="off"
-    [(ngModel)]="formData.pageId"
-  />
+<table>
+  <tr>
+    <td>Config key</td>
+    <td>
+      <input
+        type="text"
+        name="pageId"
+        autocomplete="off"
+        [(ngModel)]="formData.configKey"
+      />
+    </td>
+  </tr>
+
+  <tr>
+    <td>Field Name</td>
+    <td>
+      <input
+        type="text"
+        name="pageId"
+        autocomplete="off"
+        [(ngModel)]="formData.fieldName"
+      />
+    </td>
+  </tr>
+  <tr>
+    <td>Label</td>
+    <td>
+      <input
+        type="text"
+        name="pageId"
+        autocomplete="off"
+        [(ngModel)]="formData.label"
+      />
+    </td>
+  </tr>
+  <tr>
+    <td>Tooltip</td>
+    <td>
+      <input
+        type="text"
+        name="pageId"
+        autocomplete="off"
+        [(ngModel)]="formData.tooltip"
+      />
+    </td>
+  </tr>
+  <tr>
+    <td>Element Type</td>
+    <td>
+      <select [(ngModel)]="formData.elementType">
+        <option value="input">Input</option>
+        <option value="dropdown">Dropdown</option>
+        <option value="checkbox">Checkbox</option>
+        <option value="radio">Radio</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>Editable</td>
+    <td>
+      <input
+        type="checkbox"
+        name="pageId"
+        autocomplete="off"
+        [(ngModel)]="formData.editable"
+      />
+    </td>
+  </tr>
+  <tr>
+    <td>Required</td>
+    <td>
+      <input
+        type="checkbox"
+        name="pageId"
+        autocomplete="off"
+        [(ngModel)]="formData.required"
+      />
+    </td>
+  </tr>
+  <tr>
+    <td>Add Icon Left</td>
+    <td>
+      <input
+        type="checkbox"
+        name="pageId"
+        autocomplete="off"
+        [(ngModel)]="formData.appendIconLeft"
+      />
+    </td>
+  </tr>
+  <tr>
+    <td>Icon</td>
+    <td>
+      <input
+        type="text"
+        name="pageId"
+        autocomplete="off"
+        [(ngModel)]="formData.icon"
+      />
+    </td>
+  </tr>
+  <tr>
+    <td>Append Text Label</td>
+    <td>
+      <input
+        type="checkbox"
+        name="pageId"
+        autocomplete="off"
+        [(ngModel)]="formData.appendTextLabel"
+      />
+    </td>
+  </tr>
+  <tr>
+    <td>Text Label Position</td>
+    <td>
+      <select [(ngModel)]="formData.tooltip">
+        <option value="top">Top</option>
+        <option value="left">Left</option>
+        <option value="right">Right</option>
+      </select>
+    </td>
+  </tr>
+</table>
+
+<div class="row">
+  <div class="col-12">
+    <button (click)="onSubmit()">Generate</button>
+  </div>
 </div>
+
+<br />
+<br />
+
+<pre><p>{{this.formData1 | json}}</p></pre>
+
+<br />
+<br />
+<pre><p>
+{{this.elementSyntax}}
+</p></pre>

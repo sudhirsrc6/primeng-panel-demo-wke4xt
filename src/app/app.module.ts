@@ -40,6 +40,7 @@ import { SamplePageComponent } from './sample-page/sample-page/sample-page.compo
     DynamicElementComponent,
     InputElementComponent,
     DropdownElementComponent,
+    GenerateConfigComponent,
   ],
   bootstrap: [AppComponent],
 })
