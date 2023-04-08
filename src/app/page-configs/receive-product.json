@@ -49,15 +49,17 @@
       "requiredMsg": "Value is required.",
       "validationRules": ["number", "email"],
       "appendIconLeft": true,
-      "icon": "",
-      "appendTextLabel": true,
-      "appendTextPosition": "left"
+      "icon": "pi pi-user",
+      "appendTextTop": false,
+      "appendTextLabel": "Receipt",
+      "dataType": "percentage"
     },
     "releaseNum": {
       "fieldName": "releaseNum",
       "label": "Release Num",
       "tooltip": "Release Num",
-      "elementType": "input"
+      "elementType": "input",
+      "dataType": "string"
     },
     "receiptType": {
       "fieldName": "receiptType",

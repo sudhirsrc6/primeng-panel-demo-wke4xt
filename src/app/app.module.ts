@@ -17,6 +17,7 @@ import { AutoCompleteModule } from 'primeng/autocomplete';
 import { InputTextModule } from 'primeng/inputtext';
 import { GenerateConfigComponent } from './generate-config/generate-config/generate-config.component';
 import { SamplePageComponent } from './sample-page/sample-page/sample-page.component';
+import { InputNumberModule } from 'primeng/inputnumber';
 
 @NgModule({
   imports: [
@@ -29,6 +30,7 @@ import { SamplePageComponent } from './sample-page/sample-page/sample-page.compo
     MenuModule,
     AutoCompleteModule,
     InputTextModule,
+    InputNumberModule,
     RouterModule.forRoot([
       { path: '', component: SamplePageComponent },
       { path: 'add', component: GenerateConfigComponent },

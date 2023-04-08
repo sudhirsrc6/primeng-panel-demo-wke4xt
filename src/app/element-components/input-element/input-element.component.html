@@ -1,11 +1,77 @@
-<input
-  pInputText
-  type="text"
-  name="release"
-  [placeholder]="elementConfig.label"
-  [id]="elementConfig.fieldName"
-  [(ngModel)]="elementConfig.formData[elementConfig.fieldName]"
-  [disabled]="
-    elementConfig.editable != undefined ? !elementConfig.editable : false
-  "
-/>
+<div *ngIf="this.elementConfig.appendTextTop">
+  {{ this.elementConfig.appendTextLabel }}
+</div>
+<div class="p-inputgroup">
+  <span
+    class="p-inputgroup-addon inputgroupIconHeight"
+    *ngIf="this.elementConfig.appendIconLeft"
+  >
+    <i class="{{ this.elementConfig.icon }} inputgroupIconClolor"></i>
+  </span>
+  <input
+    pInputText
+    type="text"
+    name="release"
+    [placeholder]="elementConfig.label"
+    [id]="elementConfig.fieldName"
+    [(ngModel)]="elementConfig.formData[elementConfig.fieldName]"
+    [disabled]="
+      elementConfig.editable != undefined ? !elementConfig.editable : false
+    "
+    *ngIf="elementConfig.dataType === 'string'"
+    class="textBoxHeight"
+    autocomplete="off"
+  />
+  <p-inputNumber
+    inputId="integeronly"
+    [(ngModel)]="elementConfig.formData[elementConfig.fieldName]"
+    [placeholder]="elementConfig.label"
+    *ngIf="elementConfig.dataType === 'int'"
+    autocomplete="off"
+    [disabled]="
+      elementConfig.editable != undefined ? !elementConfig.editable : false
+    "
+  ></p-inputNumber>
+
+  <p-inputNumber
+    inputId="minmaxfraction"
+    mode="decimal"
+    [maxFractionDigits]="2"
+    [(ngModel)]="elementConfig.formData[elementConfig.fieldName]"
+    [placeholder]="elementConfig.label"
+    *ngIf="elementConfig.dataType === 'decimal'"
+    autocomplete="off"
+    [disabled]="
+      elementConfig.editable != undefined ? !elementConfig.editable : false
+    "
+  >
+  </p-inputNumber>
+
+  <p-inputNumber
+    inputId="currency-us"
+    mode="currency"
+    currency="USD"
+    locale="en-US"
+    [(ngModel)]="elementConfig.formData[elementConfig.fieldName]"
+    [placeholder]="elementConfig.label"
+    *ngIf="elementConfig.dataType === 'currency'"
+    autocomplete="off"
+    [disabled]="
+      elementConfig.editable != undefined ? !elementConfig.editable : false
+    "
+  >
+  </p-inputNumber>
+
+  <p-inputNumber
+    inputId="percent"
+    suffix="%"
+    [(ngModel)]="elementConfig.formData[elementConfig.fieldName]"
+    [placeholder]="elementConfig.label"
+    *ngIf="elementConfig.dataType === 'percentage'"
+    autocomplete="off"
+    [disabled]="
+      elementConfig.editable != undefined ? !elementConfig.editable : false
+    "
+  >
+  </p-inputNumber>
+</div>

@@ -30,7 +30,7 @@ export class SamplePageComponent implements OnInit {
     this.formData.ownerId = {
       ownerId: 'SP2',
     };
-    this.formData.po = 'R01234';
+    // this.formData.po = 'R01234';
   }
 
   onWarehouseSelected(event) {
